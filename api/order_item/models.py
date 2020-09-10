@@ -19,7 +19,8 @@ class OrderItem(models.Model):
     item = models.ForeignKey(Menu, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
 
-    status = models.CharField(choices=STATUS, max_length=15, default=0)
+    status = models.CharField(choices=STATUS, max_length=15, default="pending")
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return str(self.item)

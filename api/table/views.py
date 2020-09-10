@@ -9,7 +9,9 @@ class TableListView(ListAPIView):
     serializer_class = TableSerializer
     permission_classes = [AllowAny]
 
+
 class TableDetailView(RetrieveAPIView):
     queryset = Table.objects.all()
     serializer_class = TableSerializer
     permission_classes = [AllowAny]
+    lookup_field = "number"

@@ -5,5 +5,5 @@ from . import views
 
 urlpatterns = [
     path("", views.TableListView.as_view(), name="list_table"),
-    path("<str:pk>", views.TableDetailView.as_view(), name="retrive_table"),
+    path("<int:number>", views.TableDetailView.as_view(), name="retrive_table"),
 ]

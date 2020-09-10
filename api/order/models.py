@@ -92,6 +92,9 @@ class Order(models.Model):
         sgst = self.get_sgst()
         return round(total + (cgst + sgst), 2)
 
+    def items_counts(self):
+        return self.items.count()
+
     class Meta:
         verbose_name = "Order"
         verbose_name_plural = "Orders"

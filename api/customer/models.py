@@ -20,7 +20,7 @@ class Customer(models.Model):
     is_on_table = models.BooleanField(default=True)
     has_paid = models.BooleanField(default=False)
     token = models.CharField(max_length=10, default=0)
-    token = models.CharField(max_length=10, default=0)
+
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
