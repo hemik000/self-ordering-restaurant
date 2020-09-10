@@ -18,6 +18,9 @@ django-filter = "*"
 drf-renderer-xlsx = "*"
 rest-pandas = "*"
 pd = "*"
+whitenoise = "*"
+gunicorn = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"
