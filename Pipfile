@@ -21,6 +21,7 @@ pd = "*"
 whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
+django-storages = {extras = ["dropbox"], version = "*"}
 
 [requires]
 python_version = "3.8"
