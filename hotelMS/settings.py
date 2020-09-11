@@ -162,9 +162,13 @@ AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 
 AWS_S3_FILE_OVERWRITE = False
 
-AWS_S3_REGION_NAME = "ap-south-1"
 AWS_S3_SIGNATURE_VERSION = "s3v4"
-
+# https://django-media-cdn.s3.ap-south-1.amazonaws.com/images/33a5aefa-5a7b-4dd3-8fad-2560db6979e1.jpg
+# ?X-Amz-Algorithm=AWS4-HMAC-SHA256
+# &X-Amz-Credential=AKIAUPSRTM3JXZ7B7PV3%2F20200911%2Fap-south-1%2Fs3%2Faws4_request
+# &X-Amz-Date=20200911T105822Z&X-Amz-Expires=3600
+# &X-Amz-SignedHeaders=host
+# &X-Amz-Signature=21d1d2d4c1be6dd05f9a045a0f56bf0b320635e9ba71b6f05a673e72ce6b5e2a
 
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
