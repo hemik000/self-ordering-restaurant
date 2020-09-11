@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "corsheaders",
     "django_filters",
+    "storages",
     # My Apps
     "api",
     "api.table",
