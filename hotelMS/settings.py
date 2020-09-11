@@ -162,7 +162,10 @@ AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 
 AWS_S3_FILE_OVERWRITE = False
 
+AWS_S3_REGION_NAME = "ap-south-1"
 AWS_S3_SIGNATURE_VERSION = "s3v4"
+AWS_S3_ADDRESSING_STYLE = "virtual"
+
 # https://django-media-cdn.s3.ap-south-1.amazonaws.com/images/33a5aefa-5a7b-4dd3-8fad-2560db6979e1.jpg
 # ?X-Amz-Algorithm=AWS4-HMAC-SHA256
 # &X-Amz-Credential=AKIAUPSRTM3JXZ7B7PV3%2F20200911%2Fap-south-1%2Fs3%2Faws4_request
