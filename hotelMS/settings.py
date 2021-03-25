@@ -28,7 +28,7 @@ if os.getenv("env") == "prod":
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ["hotelms.herokuapp.com", "127.0.0.1", "192.168.0.100"]
+ALLOWED_HOSTS = ["hotelms1.herokuapp.com", "127.0.0.1", "192.168.0.100"]
 
 
 # Application definition
